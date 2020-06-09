@@ -71,7 +71,7 @@ function page(xd, firstDayOfWeek) {
     to.addDays((ldow + 7 - day) % 7);
   }
 
-  const daysForSixWeeks = (((daysBefore + days.length) / 6) >= 6);
+  const daysForSixWeeks = (((daysBefore + days.length) / 6) > 6);
 
   if (!daysForSixWeeks) {
     to.addDays(7);
